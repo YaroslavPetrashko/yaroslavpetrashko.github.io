@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #ffffff;
+  color: #111;
+  line-height: 1.6;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Divider */
+hr {
+  border: none;
+  border-top: 2px solid #111;
+  margin: 20px 0;
+}
+
+/* Home layout */
+.header {
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.home-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.profile-photo {
+  width: 200px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 0.95rem;
+  align-self: center;
+}
+
+.nav a {
+  color: #2563eb;
+  font-weight: 400;
+}
+
+.nav a:hover {
+  color: #dc2626;
+}
+
+.nav a .bracket {
+  color: #111;
+}
+
+.nav a:hover .bracket {
+  color: #111;
+}
+
+/* Social links */
+.socials {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #2563eb;
+  font-size: 0.85rem;
+}
+
+.socials svg {
+  width: 18px;
+  height: 18px;
+  fill: #111;
+}
+
+/* Bio */
+.bio {
+  margin-top: 24px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.bio p {
+  margin-bottom: 12px;
+}
+
+/* Blog page */
+.section-label {
+  font-size: 1.3rem;
+  color: #999;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.section-label:first-of-type {
+  margin-top: 20px;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  padding: 8px 0;
+}
+
+.post-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #111;
+}
+
+.post-title:hover {
+  text-decoration: underline;
+}
+
+.post-desc {
+  font-size: 0.82rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+.post-date {
+  font-size: 0.8rem;
+  color: #888;
+  white-space: nowrap;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.post-divider {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 0;
+}
+
+/* Page nav (for inner pages) */
+.page-nav {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.page-nav a {
+  color: #111;
+}
+
+.page-nav a.active {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Bookshelf */
+.book-shelf {
+  margin-bottom: 40px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.book-card {
+  text-align: center;
+}
+
+.book-card img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.book-card .book-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 8px;
+  line-height: 1.3;
+}
+
+.book-card .book-author {
+  font-size: 0.72rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+.book-card .book-rating {
+  font-size: 0.72rem;
+  color: #999;
+  margin-top: 2px;
+}
+
+.loading {
+  color: #999;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.fallback {
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Hackathons */
+.hackathon {
+  margin-bottom: 40px;
+}
+
+.hackathon h3 {
+  margin-bottom: 4px;
+}
+
+.hackathon h3 a {
+  color: #111;
+}
+
+.hackathon h3 a:hover {
+  color: #2563eb;
+}
+
+.hackathon-date {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.hackathon-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.hackathon p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.hackathon-links {
+  display: flex;
+  gap: 16px;
+  font-size: 0.82rem;
+  margin-top: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 30px 16px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-photo {
+    width: 160px;
+  }
+
+  .post {
+    flex-direction: column;
+  }
+
+  .post-date {
+    margin-left: 0;
+    margin-top: 4px;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  }
+}

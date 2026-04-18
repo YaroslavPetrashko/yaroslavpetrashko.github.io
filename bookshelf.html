@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bookshelf - yaroslav petrashko</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>yaroslav petrashko</h1>
+    </div>
+
+    <nav class="page-nav">
+      <a href="index.html">home</a>
+      <a href="blog.html">blog</a>
+      <a href="bookshelf.html" class="active">bookshelf</a>
+      <a href="hackathons.html">hackathons</a>
+    </nav>
+
+    <hr>
+
+    <div class="book-shelf">
+      <h2 class="section-label">Currently Reading</h2>
+      <div id="currently-reading" class="book-grid">
+        <p class="loading">loading books...</p>
+      </div>
+    </div>
+
+    <div class="book-shelf">
+      <h2 class="section-label">Read</h2>
+      <div id="read-books" class="book-grid">
+        <p class="loading">loading books...</p>
+      </div>
+    </div>
+
+    <div class="fallback">
+      <p>Books pulled from <a href="https://www.goodreads.com/user/show/YOUR_GOODREADS_ID" target="_blank">my Goodreads profile</a>. If the shelves don't load, visit me there.</p>
+    </div>
+  </div>
+
+  <script src="js/goodreads.js"></script>
+</body>
+</html>
