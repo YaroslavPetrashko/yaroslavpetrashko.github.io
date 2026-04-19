@@ -49,18 +49,29 @@ a:hover {
 hr {
   border: none;
   border-top: 2px solid #111;
-  margin: 20px 0;
+  margin: 8px 0;
 }
 
 /* Home layout */
 .header {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.affiliation-logo {
+  height: 80px;
+  width: auto;
 }
 
 .tagline {
   font-size: 1.1rem;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
 }
 
 .home-content {
@@ -108,8 +119,9 @@ hr {
   gap: 20px;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 0;
   flex-wrap: wrap;
+  padding: 8px 0;
 }
 
 .socials a {
@@ -135,6 +147,52 @@ hr {
 
 .bio p {
   margin-bottom: 12px;
+}
+
+.poster-link {
+  color: #2563eb;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Publications */
+.publications {
+  margin-top: 24px;
+}
+
+.publications h2 {
+  margin-bottom: 20px;
+}
+
+.publication {
+  margin-bottom: 28px;
+}
+
+.pub-venue {
+  font-size: 0.72rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.pub-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.pub-authors {
+  font-size: 0.8rem;
+  color: #555;
+  font-weight: 400;
+}
+
+.pub-note {
+  color: #aaa;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 /* Blog page */
@@ -267,7 +325,8 @@ hr {
 
 /* Hackathons */
 .hackathon {
-  margin-bottom: 40px;
+  margin-bottom: 16px;
+  position: relative;
 }
 
 .hackathon h3 {
@@ -290,15 +349,50 @@ hr {
 }
 
 .hackathon-img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  margin-bottom: 12px;
+  position: absolute;
+  left: calc(100% + 24px);
+  top: 50%;
+  transform: translateY(-52%);
+  width: 300px;
+  height: auto;
+}
+
+.hackathon-img-harvard {
+  width: 460px;
+}
+
+.hackathon-img-exp {
+  width: 420px;
+}
+
+.hackathon-imgs-left {
+  position: absolute;
+  right: calc(100% + 60px);
+  top: 50%;
+  transform: translateY(-48%);
+  display: flex;
+  gap: 30px;
+}
+
+.hackathon-imgs-left img {
+  width: 180px;
+  height: auto;
+}
+
+.hackathon-img-miami {
+  width: 420px !important;
+  height: auto;
 }
 
 .hackathon p {
   font-size: 0.88rem;
   line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.hackathon-tech {
+  font-size: 0.78rem;
+  color: #888;
   margin-bottom: 8px;
 }
 
@@ -339,5 +433,10 @@ hr {
 
   .book-grid {
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  }
+
+  .hackathon-img,
+  .hackathon-imgs-left {
+    display: none;
   }
 }
