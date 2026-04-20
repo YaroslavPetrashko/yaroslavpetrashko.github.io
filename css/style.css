@@ -286,8 +286,8 @@ hr {
 }
 
 .book-card img {
-  width: 100px;
-  height: 150px;
+  width: 120px;
+  height: 180px;
   object-fit: cover;
   border: 1px solid #ddd;
 }
