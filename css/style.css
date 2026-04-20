@@ -269,6 +269,30 @@ hr {
   text-decoration: underline;
 }
 
+.page-socials-row {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.page-socials-row a {
+  color: #111;
+  display: flex;
+  align-items: center;
+}
+
+.page-socials-row a:hover {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.page-socials-row svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
 /* Bookshelf */
 .book-shelf {
   margin-bottom: 40px;
@@ -487,4 +511,5 @@ hr {
     font-size: 0.72rem;
     column-gap: 10px;
   }
+
 }
