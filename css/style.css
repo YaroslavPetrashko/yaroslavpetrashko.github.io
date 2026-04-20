@@ -384,6 +384,11 @@ hr {
   height: auto;
 }
 
+.hackathon-img-treehacks {
+  width: 420px !important;
+  height: auto;
+}
+
 .hackathon p {
   font-size: 0.88rem;
   line-height: 1.7;
@@ -398,7 +403,9 @@ hr {
 
 .hackathon-links {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 4px;
   font-size: 0.82rem;
   margin-top: 8px;
 }
@@ -414,12 +421,12 @@ hr {
   }
 
   .home-content {
-    flex-direction: column;
-    align-items: center;
+    gap: 20px;
+    align-items: flex-start;
   }
 
   .profile-photo {
-    width: 160px;
+    width: 140px;
   }
 
   .post {
@@ -437,6 +444,47 @@ hr {
 
   .hackathon-img,
   .hackathon-imgs-left {
-    display: none;
+    position: static;
+    transform: none;
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .hackathon-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .hackathon-imgs-left img {
+    width: 140px !important;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .hackathon-imgs-left {
+    justify-content: center;
+  }
+
+  .hackathon-img-miami,
+  .hackathon-img-treehacks {
+    width: 100% !important;
+    max-width: 100%;
+    flex: 1;
+  }
+
+  .hackathon-img-harvard,
+  .hackathon-img-exp {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hackathon-links {
+    font-size: 0.72rem;
+    column-gap: 10px;
   }
 }
