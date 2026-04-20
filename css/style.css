@@ -529,11 +529,17 @@ hr {
     column-gap: 10px;
   }
 
-  .page-nav .page-nav-socials {
-    display: none;
+  .page-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 
-  .page-header-socials {
-    display: flex;
+  .page-nav-links {
+    order: 2;
+  }
+
+  .page-nav .page-nav-socials {
+    order: 1;
   }
 }
