@@ -11,7 +11,7 @@ body {
   background: #ffffff;
   color: #111;
   line-height: 1.6;
-  padding: 60px 20px;
+  padding: 48px 20px 60px;
 }
 
 .container {
@@ -54,24 +54,30 @@ hr {
 
 /* Home layout */
 .header {
-  margin-bottom: 4px;
+  margin-bottom: 0;
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .affiliation-logo {
-  height: 80px;
+  height: 120px;
   width: auto;
+  transform: translateY(8px);
 }
 
 .tagline {
   font-size: 1.1rem;
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 0;
+}
+
+/* Home: first rule sits right under the tagline / logo row */
+.header + hr {
+  margin-top: 4px;
 }
 
 .home-content {
@@ -454,7 +460,7 @@ hr {
 /* Responsive */
 @media (max-width: 600px) {
   body {
-    padding: 30px 16px;
+    padding: 24px 16px 30px;
   }
 
   h1 {
