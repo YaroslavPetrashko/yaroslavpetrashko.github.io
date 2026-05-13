@@ -92,6 +92,7 @@ hr {
   width: 200px;
   height: auto;
   flex-shrink: 0;
+  transform: translateY(-8px);
 }
 
 .nav {
