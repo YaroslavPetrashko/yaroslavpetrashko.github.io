@@ -401,16 +401,16 @@ hr {
   left: calc(100% + 10px);
   top: 50%;
   transform: translateY(-52%);
-  width: 280px;
+  width: clamp(0px, calc(max(20px, (100vw - 700px) / 2) - 20px), 280px);
   height: auto;
 }
 
 .hackathon-img-harvard {
-  width: 340px;
+  width: clamp(0px, calc(max(20px, (100vw - 700px) / 2) - 20px), 340px);
 }
 
 .hackathon-img-exp {
-  width: 340px;
+  width: clamp(0px, calc(max(20px, (100vw - 700px) / 2) - 20px), 340px);
 }
 
 .hackathon-imgs-left {
@@ -423,17 +423,17 @@ hr {
 }
 
 .hackathon-imgs-left img {
-  width: 170px;
+  width: clamp(0px, calc((max(20px, (100vw - 700px) / 2) - 34px) / 2), 170px);
   height: auto;
 }
 
 .hackathon-img-miami {
-  width: 340px !important;
+  width: clamp(0px, calc(max(20px, (100vw - 700px) / 2) - 20px), 340px) !important;
   height: auto;
 }
 
 .hackathon-img-treehacks {
-  width: 340px !important;
+  width: clamp(0px, calc(max(20px, (100vw - 700px) / 2) - 20px), 340px) !important;
   height: auto;
 }
 
